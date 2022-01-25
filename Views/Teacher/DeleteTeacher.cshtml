@@ -1,0 +1,13 @@
+﻿@{
+    Layout = null;
+}
+@{ 
+    ViewData["HasFooter"] = false;
+}
+<h2 style="text-align:center">Ogretmen Silme Listesi</h2>
+<div class="alert alert-danger">
+    <partial name="~/Views/Teacher/Partial/_TeacherInfoPartial.cshtml" />
+    <h3>Silmek istediğinize emin misiniz ?</h3>
+    <button class="btn btn-primary">Evet</button>
+    <button class="btn btn-primary">Hayır</button>
+</div>

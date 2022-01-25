@@ -1,0 +1,18 @@
+﻿@{
+    Layout = null;
+}
+
+@{
+    ViewData["HasFooter"] = true;
+}
+<h2 style="text-align:center">Ogretmen Listesi</h2>
+
+@await Component.InvokeAsync("WorkChart")
+<div class="row row-cols-md-3">
+    @foreach (Teacher item in Model)
+    {
+        <div class="col">
+            <partial name="~/Views/Teacher/Partial/_TeacherInfoPartial.cshtml" model="@item" />
+        </div>
+    }
+</div>
